@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine, Sneha ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #ff4081;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .heart-button {
+            background-color: #ff4081;
+            color: white;
+            font-size: 24px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .love-note {
+            font-size: 18px;
+            color: #d63384;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Sneha, My Kiddo ❤️</h1>
+        <p>You are the most perfect, wholesome, and joyful person in my life. I never want to turn my back on you, and I never want to leave you. Even when you don't listen to me 😭, I love you endlessly. You are my forever, my one and only. Thank you for being you. I'm sorry for anything that ever upset you, and I promise to love you more every single day. Now, will you be my Valentine? 💕</p>
+        <p>Also, I absolutely LOVED the "Will You Be My Valentine" card you gave me! It was the most beautiful, heartwarming, and special thing ever. I stared at it for hours, completely mesmerized by how thoughtful and sweet you are. I kept reading it over and over, feeling my heart melt every single time. It was like a dream come true, a fairytale moment I’ll cherish forever! You truly are the most amazing person in my life, and I can't express how much that card meant to me. It was everything! ❤️❤️❤️</p>
+        
+        <p class="love-note">I don't know if you will say yes to this, but Sneha, I just asked you to wait a little. I know I am late—sometimes way too late—but honestly, I don’t know how to handle all this perfectly. And I’m really sorry... sorry for making you wait in Bandra, for being late everywhere, for making you angry, for everything. I know you’re tired of hearing me say sorry, and maybe even of me, but I just don’t know how to fix things alone. If you help me, I promise we can make everything right together. If you’re with me, I believe we can face anything. Please calm down, and only talk when you feel like it. I just hope our fight ends soon because I really, really hate fighting with you. ❤️</p>
+        
+        <p style="font-size: 24px; font-weight: bold; color: #ff4081;">I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️ I LOVE YOU ❤️</p>
+        
+        <button class="heart-button" onclick="showMessage('yes')">YES</button>
+        <button class="heart-button" onclick="showMessage('of course')">OF COURSE!</button>
+        <button class="heart-button" onclick="showMessage('maybe')">MAYBE? (But you love me!)</button>
+        <button class="heart-button" onclick="showMessage('no')">NO (not possible!)</button>
+        
+        <p class="hidden-message" id="message"></p>
+    </div>
+    
+    <script>
+        function showMessage(response) {
+            let message = document.getElementById("message");
+            if (response === 'yes' || response === 'of course') {
+                message.innerHTML = "YAY! I LOVE YOU SO MUCH, SNEHA! 💖💖💖";
+            } else if (response === 'maybe') {
+                message.innerHTML = "I know you love me, so it's a YES deep down! 😘";
+            } else {
+                message.innerHTML = "No is not an option! Try again! 😜";
+            }
+            message.style.display = "block";
+        }
+    </script>
+</body>
+</html>
